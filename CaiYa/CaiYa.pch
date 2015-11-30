@@ -1,0 +1,42 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import<QuartzCore/QuartzCore.h>
+    #import <CoreText/CoreText.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+
+    #import <ShareSDK/ShareSDK.h>
+    #import <TencentOpenAPI/QQApiInterface.h>
+    #import <TencentOpenAPI/TencentOAuth.h>
+    #import "WXApi.h"
+
+    #import "UIView+Additions.h"
+//#import "UIImageView+WebCache.h"
+#import "UIImageView+AFNetworking.h"
+
+    #import "AppDelegate.h"
+    #import "MM_Define.h"
+    #import "MM_BaseTableView.h"
+    #import "MM_BaseViewController.h"
+    #import "MM_BaseNavigationController.h"
+
+    #import "MM_Object.h"
+    #import "MM_Tools.h"
+    #import "MM_NetworkController.h"
+    #import "MM_NetInstanceInterface.h"
+
+    #import "MM_HomePageTabController.h"
+
+#endif
